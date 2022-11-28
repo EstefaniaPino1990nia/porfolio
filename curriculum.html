@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="estiloscurriculum.css">
+    <script>
+        $(document).ready(function(){
+            $(".full_info_wrap .tabs ul li").click(function(){
+                $(".full_info_wrap .tabs ul li").removeClass("active");
+                $(this).addClass("active");
+
+                var datali = $(this).attr("data-li");
+                
+                $(".full_info_item").hide();
+                if(datali == "experience"){
+                    $(".experience").show(); 
+                }
+                else if(datali=="education"){
+                    $(".education").show(); 
+                }
+                else if(datali=="contact"){
+                    $(".contact").show(); 
+                }
+                else{
+                    console.log("Loanding...")
+                }
+
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="resume">
+            <div class="profile_info">
+                <div class="profile_img">
+                    <img src="imagenes/estefa.jpg" alt="imagen_curriculum">
+                </div>
+                <div class="profile_data">
+                    <p class="name">Estefania Pino</p>
+                    <span>Lleida, España</span>
+                </div>
+                <div class="view_more_btn">
+                    <a href="index.html">Volver al porfolio</a>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="title">
+                    Lenguajes de programación
+                </div>
+                <ul>
+                    <li>
+                        <div class="skill_item html">
+                            <div class="icon"><img src="imagenes/html.png" height="30px" width="30px"></div>
+                            <div class="text">HTML</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_item css">
+                            <div class="icon"><img src="imagenes/css.png" height="30px" width="30px"></div>
+                            <div class="text">CSS</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_item js">
+                            <div class="icon"><img src="imagenes/js.png" height="30px" width="30px"></div>
+                            <div class="text">JavaScript</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_item php">
+                            <div class="icon"><img src="imagenes/php.png" height="30px" width="30px"></div>
+                            <div class="text">PHP</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_item sql">
+                            <div class="icon"><img src="imagenes/sql.png" height="30px" width="30px"></div>
+                            <div class="text">SQL</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill_item git">
+                            <div class="icon"><img src="imagenes/git.png" height="30px" width="30px"></div>
+                            <div class="text">GIT/GitHub</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="full_info_wrap">
+                <div class="tabs">
+                    <ul>
+                        <li data-li="experience" class="active">Experiencia</li>
+                        <li data-li="education">Estudios</li>
+                        <li data-li="contact">Contacto</li>
+                    </ul>
+                </div>
+                <div class="full_info">
+                    <div class="full_info_item experience">
+                        <div class="title">Experiencia profesional</div>
+                        <div class="info_wrap">
+                            <ul>
+                                <li>
+                                    <div class="sub_title">
+                                        2015 - 2022
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">
+                                            Bugaderia Garraf
+                                        </div>
+                                        <div class="data">
+                                            Auxiliar de lavanderia
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sub_title">
+                                        2014 - 2015
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">
+                                            Hospital Vall d'Hebron
+                                        </div>
+                                        <div class="data">
+                                           Técnico en documentación sanitaria
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sub_title">
+                                        2013 - 2014
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">
+                                            Residencia Redos
+                                        </div>
+                                        <div class="data">
+                                            Técnico en atención sociosanitaria
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="full_info_item education">
+                        <div class="title">Estudios</div>
+                        <div class="info_wrap">
+                            <ul>
+                                <li>
+                                    <div class="sub_title">
+                                        2020 - 2022
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">
+                                            CFGS Técnico en desarrollo de aplicaciones web (Cursando)
+                                        </div>
+                                        <div class="data">
+                                            Centro de estudios Ilerna Online. Lleida
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sub_title">
+                                        2014 - 2015
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">
+                                            CFGS Técnico en documentación sanitaria
+                                        </div>
+                                        <div class="data">
+                                            Instituto Pedraforca. L'hospitalet de llobregat - Barcelona
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sub_title">
+                                        2010 - 2012
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">
+                                            CFGM Atención sociosanitaria
+                                        </div>
+                                        <div class="data">
+                                            IES Alexandre Gali. Les Roquetes - Barcelona
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="full_info_item contact">
+                        <div class="title">Contacto</div>
+                        <div class="info_wrap">
+                            <ul>
+                                <li>
+                                    <span class="info_q">
+                                        Email:
+                                    </span>
+                                    <span class="info_a">
+                                        eps.estefania@gmail.com
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="info_q">
+                                        Teléfono:
+                                    </span>
+                                    <span class="info_a">
+                                        689339566
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="info_q">
+                                        Lugar de residencia:
+                                    </span>
+                                    <span class="info_a">
+                                        Lleida
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="info_q">
+                                        Disponibilidad horaria:
+                                    </span>
+                                    <span class="info_a">
+                                        Todas
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="info_q">
+                                        Otros datos:
+                                    </span>
+                                    <span class="info_a">
+                                        Ganas de aprender y trabajar
+                                    </span>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

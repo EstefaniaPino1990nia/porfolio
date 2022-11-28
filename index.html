@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li><a href="#banner" onclick="toggleMenu();">Inicio</a></li>
+                <li><a href="#about" onclick="toggleMenu();">Perfil</a></li>
+                <li><a href="#services" onclick="toggleMenu();">Lenguajes</a></li>
+                <li><a href="#project" onclick="toggleMenu();">Proyectos</a></li>
+                <li><a href="#contact" onclick="toggleMenu();">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <a href="#" class="logo">Porfolio</a>
+                <div class="toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <!--Banner-->
+            <section class="banner" id="banner">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="imagenes/este.jpg">
+                    </div>
+                    <h3>Estefania Pino Salazar</h3>
+                    <p>Desarrollo de aplicaciones web.</p>
+                    <a href="curriculum.html" class="btn">Ver Curriculum</a>
+                    <!--<ul class="socialMedia">
+                        <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>-->
+                </div>
+            </section>
+
+            <!--Sobre mi-->
+
+            <section class="about adjust" id="about">
+                <div class="title">
+                    <h2>Sobre mi</h2>
+                </div>
+                <div class="content">
+                    <div class="textBox">
+                        <p>Acabo de finalizar mis estudios de técnico en desarrollo de aplicaciones web en el centro de estudios 
+                            Ilerna-Online. Actualmente me encuentro en la búsqueda de mi primer trabajo o prácticas que me permita
+                            adquirir conocimientos en programación web.</p><br>
+                            <p>Con la ilusión de llegar a ser algún día programadora web, poder formarme y aprender junto a
+                            un equipo de trabajo. En mi poca experiencia he ido formándome por mi cuenta con videos de apoyo, y he conseguido
+                            realizar pequeños trabajos que podrás ver más adelante en este porfolio y descargarlos en mi página de github.</p><br>
+                            <p>Espero tener el placer de poder encontrarnos durante una entrevista para poder demostrar que
+                            mi poca experiencia, mi energía y mis habilidades, pueden ser útiles para cualquier trabajo
+                            que pueda surgir.
+                        </p>
+                    </div>
+                    <div class="imgBx">
+                        <img src="imagenes/thumbnail_1662114590540.jpg">
+                    </div>
+                </div>
+            </section>
+
+            <!--Lenguajes-->
+
+            <section class="services" id="services">
+                <div class="title">
+                    <h2>Lenguajes de programación</h2>
+                    <p>Programas y lenguajes que utilizo.</p>
+                </div>
+                <div class="content">
+                    <div class="serviceBox">
+                        <img src="imagenes/html.png">
+                        <h2>HTML</h2>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="imagenes/css.png">
+                        <h2>CSS - Bootstrap</h2>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="imagenes/js.png">
+                        <h2>JavaScript - jQuery</h2>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="imagenes/php.png">
+                        <h2>PHP</h2>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="imagenes/sql.png">
+                        <h2>SQL - MySQL</h2>
+
+                    </div>
+                    <div class="serviceBox">
+                        <img src="imagenes/git.png">
+                        <h2>Git - GitHub</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!--Proyectos-->
+
+            <section class="project" id="project">
+                <div class="title">
+                    <h2>Proyectos recientes</h2>
+                    <p>Descarga los proyectos en GitHub.</p>
+                </div>
+                <div class="content">
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="imagenes/imagen2.jpg">
+                        </div>
+                        <div class="textBox">
+                            <h3><a href="https://nailtopp.000webhostapp.com/proyecto_nuevo/index.html">Proyecto 01</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="imagenes/imagen3.png">
+                        </div>
+                        <div class="textBox">
+                            <h3><a href="https://recetasmuyfaciles.000webhostapp.com/proyecto_nuevo2/index.html">Proyecto 02</a></h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="imagenes/imagenprincipal2.png">
+                        </div>
+                        <div class="textBox">
+                            <h3><a href="https://github.com/EstefaniaPino1990nia/RefugioAnimalia.github.io">Proyecto 03</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Contacto-->
+            <section class="contact" id="contact">
+                <div class="title">
+                    <h2>Contacta conmigo</h2>
+                    <p></p>
+                </div>
+                <div class="contactForm">
+                    <form action="enviar.php" method="post" name="formulario" id="formulario" class="form">
+                        <div class="row">
+                            <input type="text" name="nombre" placeholder="Nombre" required>
+                            <input type="text" name="apellido" placeholder="Apellido" required>
+                        </div>
+                        <div class="row">
+                            <input type="text" name="email" placeholder="Email" required>
+                            <input type="text" name="telefono" placeholder="Número de teléfono" required>
+                        </div>
+                        <div class="row2">
+                            <textarea placeholder="Mensaje" name="mensaje" required></textarea>
+                        </div>
+                        <div class="row2">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!--Pie de página-->
+            <div class="copyright">
+                <p>Porfolio de Estefania Pino Salazar - eps.estefania@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let topbar = document.querySelector('.topbar');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        toggle.onclick = function () {
+            toggle.classList.toggle('active');
+            topbar.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        function toggleMenu() {
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            navigation.classList.remove('active');
+            main.classList.remove('active');
+        }
+    </script>
+</body>
+
+</html>
